@@ -3,6 +3,8 @@
 #include <string.h>
 #include "coinflip.h"
 #include "numberguess.h"
+#include "txtcount.h"
+
 
 static void module_opt();
 
@@ -19,6 +21,13 @@ int main(int argc, char *argv[]){
 		coinflipper();
 	else if (strcmp(argv[1], "guess") == 0)
 		numberguesser();
+	else if (strcmp(argv[1], "wordc") == 0){
+		char *in = "word";
+		txtcounter(in);
+	}else if (strcmp(argv[1], "charc") == 0){
+		char *in = "ch";
+		txtcounter(in);
+	}
 	else{
 		printf("Incorrect argument.\n");
 		module_opt();
@@ -31,4 +40,6 @@ static void module_opt(){
 	printf("#####\n\n");
 	printf("Coin flip - flip\n");
 	printf("Number guesser - guess\n");
+	printf("Word counter - wordc\n");
+	printf("Character counter - charc\n");
 }

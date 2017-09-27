@@ -1,0 +1,11 @@
+C is widely used for system programming in implementing operating systems and embedded system applications, because C code, when written for portability, can be used for most purposes, yet when needed, system-specific code can be used to access specific hardware addresses and to perform type punning to match externally imposed interface requirements, with a low run-time demand on system resources.
+
+C can also be used for website programming using CGI as a "gateway" for information between the Web application, the server, and the browser. C is often chosen over interpreted languages because of its speed, stability, and near-universal availability.
+
+One consequence of C wide availability and efficiency is that compilers, libraries and interpreters of other programming languages are often implemented in C. The reference implementations of Python, Perl and PHP, for example, are all written in C.
+
+Because the layer of abstraction is thin and the overhead is low, C enables programmers to create efficient implementations of algorithms and data structures, useful for computationally intense programs. For example, the GNU Multiple Precision Arithmetic Library, the GNU Scientific Library, Mathematica, and MATLAB are completely or partially written in C.
+
+C is sometimes used as an intermediate language by implementations of other languages. This approach may be used for portability or convenience; by using C as an intermediate language, additional machine-specific code generators are not necessary. C has some features, such as line-number preprocessor directives and optional superfluous commas at the end of initializer lists, that support compilation of generated code. However, some of C shortcomings have prompted the development of other C-based languages specifically designed for use as intermediate languages, such as C--.
+
+C has also been widely used to implement end-user applications. However, such applications can also be written in newer, higher-level languages.

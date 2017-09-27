@@ -1,7 +1,8 @@
-MODULES_SRC = coinflip.c numberguess.c
-TEST_SRC = tester.c $(MODULES_SRC)
-MAIN_SRC = sample.c $(MODULES_SRC)
-HEADERS = coinflip.h numberguess.h
+MODULES_SRC = coinflip.c numberguess.c txtcount.c
+UTILS_SRC = common.c
+TEST_SRC = tester.c $(MODULES_SRC) $(UTILS_SRC)
+MAIN_SRC = sample.c $(MODULES_SRC) $(UTILS_SRC)
+HEADERS = coinflip.h numberguess.h common.h txtcount.h
 
 
 all: sample
