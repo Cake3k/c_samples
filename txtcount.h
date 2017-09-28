@@ -3,8 +3,8 @@
 #include <stdbool.h>
 
 /**
- * Counts the number of words in a text file,
- * chosen by the user.
+ * Entry point for txt counter modules
+ * @param[in] type Counter type (word/ch)
  */
 void txtcounter(char *type);
 

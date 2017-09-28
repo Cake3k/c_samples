@@ -5,8 +5,11 @@
 #include "numberguess.h"
 #include "txtcount.h"
 
-void optprint();
+static void optprint();
 
+/**
+ * Main entry point for sample program
+ */
 void main(){
 	printf("\nSample C programs.\nType in the corresponding command to choose an option.\n");
 	
@@ -37,7 +40,10 @@ void main(){
 
 }
 
-void optprint(){
+/**
+ * Print module options
+ */
+static void optprint(){
 	printf("\nOption        -     Command\n");
 	printf("##############################\n");
 	printf("Coin flip       -     cf\n");

@@ -8,6 +8,10 @@
 /** Asks the user to think of a number, 
  *  which the program will try to guess,
  *  and give a range limit of possible guesses.
+ *
+ * Using rand() rather than binary search algorithm
+ * because a guess is supposed to be more random
+ * than methodical.
  */
 void numberguesser(){
 	srand(time(NULL));
@@ -47,9 +51,6 @@ void numberguesser(){
 		goto wronglbl;
 
 	}
-
-
-
 
 
 

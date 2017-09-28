@@ -16,4 +16,14 @@
 bool listfiles(char *dirname[], char *filetype[]);
 
 
+/**
+ * Fast and easy percentage calculation
+ * @param[in]  part  Part to calculate percentage for
+ * @param[in]  total Total to calculate percentage of
+ * @return		Percentage as float
+ */
+float percentage(int part, int total);
+
+
+
 #endif

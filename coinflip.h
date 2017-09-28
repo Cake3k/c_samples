@@ -10,8 +10,4 @@ void coinflipper();
 /** Flip calculation */
 static char flip();
 
-/* 		Quick Percentage calculation for prints		*/
-static float percentage(int total, int part);
-
-
 #endif

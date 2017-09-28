@@ -8,12 +8,16 @@
 
 static void module_opt();
 
-int main(int argc, char *argv[]){
+/**
+ * Entry point for testing modules
+ * @param[in]  argv Which module to test
+ */
+void main(int argc, char *argv[]){
 
 	if (argc<2){
 		printf("Testing requires an argument\n");
 		module_opt();
-		return 0;
+		return;
 	}
 	else
 		printf("%s\n", argv[1]);
@@ -34,6 +38,9 @@ int main(int argc, char *argv[]){
 	}
 }
 
+/**
+ * Print module options
+ */
 static void module_opt(){
 	
 	printf("Choose one available testing option - argument\n");

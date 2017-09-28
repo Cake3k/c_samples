@@ -2,10 +2,11 @@
 #include <stdio.h>
 #include <time.h>
 #include <string.h>
+#include <stdbool.h>
 #include "coinflip.h"
+#include "common.h"
 
 static char flip();
-static float percentage(int total, int part);
 
 /** Flips a coin when the user hits enter.
  * 	Records flip statistics, and outputs them
@@ -72,10 +73,3 @@ static char flip(){
 
 }
 
-/* 		Quick Percentage calculation for prints		*/
-static float percentage(int part, int total){
-	if (part == 0)
-		return 0;
-
-	return ((float)part/(float)total*100);
-}

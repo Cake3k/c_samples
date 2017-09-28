@@ -30,3 +30,11 @@ bool listfiles(char *dirname[], char *filetype[]){
 	return true;
 
 }
+
+/**		Quick Percentage calculation		*/
+float percentage(int part, int total){
+	if (part == 0)
+		return 0;
+
+	return ((float)part/(float)total*100);
+}

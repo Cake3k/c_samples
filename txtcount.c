@@ -9,7 +9,9 @@
 int BUFSIZE = 255;
 
 
-
+/**
+ * Entry point for txt counter modules
+ */
 void txtcounter(char *type){
 
 	char fpath[BUFSIZE];
